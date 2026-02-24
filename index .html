@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanu Bhaiya Gift Store</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff8f0;
+    color:#333;
+}
+
+/* Closed Banner */
+.closed-banner{
+    background:#d32f2f;
+    color:white;
+    text-align:center;
+    padding:10px;
+    font-weight:bold;
+}
+
+/* Navbar */
+.navbar{
+    background:#ff9800;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+}
+
+.nav-links a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    text-decoration:underline;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(to right,#ffcc80,#ffe0b2);
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero h2{
+    font-size:22px;
+}
+
+/* Search Bar */
+.search-section{
+    text-align:center;
+    padding:20px;
+}
+
+#searchInput{
+    width:80%;
+    max-width:400px;
+    padding:10px;
+    border:2px solid #ff9800;
+    border-radius:25px;
+    outline:none;
+}
+
+/* Products */
+.products{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+/* About */
+.about{
+    padding:40px 20px;
+    background:#ffe0b2;
+    text-align:center;
+}
+
+/* Offers */
+.offers{
+    padding:40px 20px;
+    text-align:center;
+}
+
+/* Instagram Button */
+.instagram-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#E1306C;
+    color:white;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.instagram-btn:hover{
+    opacity:0.8;
+}
+
+/* Contact */
+.contact{
+    background:#ffcc80;
+    padding:30px;
+    text-align:center;
+}
+
+/* Footer */
+footer{
+    background:#ff9800;
+    text-align:center;
+    padding:15px;
+    color:white;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="closed-banner">
+🚫 Temporarily Closed
+</div>
+
+<div class="navbar">
+<div class="logo">Kanu Bhaiya Gift Store</div>
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+
+<section class="hero" id="home">
+<h1>Kanu Bhaiya Gift Store</h1>
+<h2>कानू भैया गिफ्ट स्टोर</h2>
+<p>Best Gift Shop in Sonaili 🎁</p>
+
+<a class="instagram-btn" href="https://www.instagram.com/kanubhaiya_gift_store/" target="_blank">
+Follow Us on Instagram
+</a>
+</section>
+
+<section class="search-section">
+<input type="text" id="searchInput" placeholder="Search products...">
+</section>
+
+<section class="products" id="products">
+<h2>Our Products</h2>
+
+<div class="product-grid" id="productGrid">
+
+<div class="card"><img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da"><h3>Teddy Bear</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1585386959984-a41552231658"><h3>Gift Hamper</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1616627981451-6b41f8e98a6f"><h3>Birthday Decoration</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30"><h3>Kids Toy Car</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"><h3>Photo Frame</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2"><h3>Greeting Cards</h3></div>
+
+</div>
+</section>
+
+<section class="about" id="about">
+<h2>About Our Store</h2>
+<p>Located at Bundel Chowk, Sonaili, Nijhura, Bihar 855114.</p>
+<p>We provide best quality birthday gifts, toys, decoration items & surprise hampers.</p>
+</section>
+
+<section class="offers">
+<h2>Special Offers</h2>
+<p>🎉 Festival Discounts Available</p>
+<p>🎁 Bulk Order Special Pricing</p>
+<p>🎂 Birthday Decoration Packages</p>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p>📍 Bundel Chowk, Sonaili, Nijhura, Bihar 855114</p>
+<p>📌 JP67+5R Sonaili, Bihar</p>
+</section>
+
+<footer>
+© 2026 Kanu Bhaiya Gift Store | All Rights Reserved
+</footer>
+
+<script>
+document.getElementById("searchInput").addEventListener("keyup", function() {
+    let filter = this.value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(filter) ? "block" : "none";
+    });
+});
+</script>
+
+</body>
+</html>
